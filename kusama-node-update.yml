@@ -54,10 +54,10 @@
       tags: 
           - replace
 
-#    - name: start kusama service
-#      become: yes
-#      systemd:
-#        name: kusama
-#        state: started
-#      tags: 
-#          - replace
+    - name: start kusama service
+      become: yes
+      systemd:
+        name: kusama
+        state: started
+      tags: 
+          - replace
