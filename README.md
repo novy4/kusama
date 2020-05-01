@@ -1,17 +1,17 @@
 # KUSAMA AUTOMATION #
 
-Some requirments:
+### Some requirments:
 
 * python2 or python3 is installed
 * polkadot repo is located in $HOME/polkadot directory
 * polkadot binary is located in $HOME/polkadot/target/release diretory
 
-# usage:
+#### usage:
 ```
 ansible -i hosts.yaml -m ping (ping your nodes)
 ansible-playbook -i hosts.yaml kusama-node-update.yml -e "current_branch=v0.7.32" -t replace --ask-become-pass
 ```
-# where:
+#### where:
 ```
 -i hosts.yaml - your nodes list
 -e "current_branch=v0.7.32" - new version of kusama release
@@ -20,4 +20,4 @@ ansible-playbook -i hosts.yaml kusama-node-update.yml -e "current_branch=v0.7.32
 --ask-become-pass - use this to restart the systemd unit in case non root user.
 ```
 
-HAVE FUN!
+## HAVE FUN!
