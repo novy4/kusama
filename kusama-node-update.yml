@@ -1,6 +1,6 @@
 ---
 - name: Kusama node update and restart systemd unit
-  hosts: test
+  hosts: kusama-nodes
   gather_facts: yes
   vars:
     kusama_branch: "{{ current_branch }}"
