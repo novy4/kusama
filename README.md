@@ -1,5 +1,10 @@
 # KUSAMA AUTOMATION #
 
+## kusama-node-update ## 
+This playbook allows to update your nodes using two methods: 
+* rebuild - recompile from source code
+* replace - download the binary from polkadot github and replace with existing one
+
 ### Some requirments:
 
 * python2 or python3 is installed
