@@ -1,11 +1,12 @@
 ### KUSAMA AUTOMATIONS ###
 
 Some requirments:
-* python2 or pytho3 installed
+* python2 or python3 is installed
 * polkadot repo is located in $HOME/polkadot directory
 * polkadot binary is located in $HOME/polkadot/target/release diretory
 
-usage: 
+usage:
+ansible -i hosts.yaml -m ping (ping your nodes)
 ansible-playbook -i hosts.yaml kusama-node-update.yml -e "current_branch=v0.7.32" -t replace --ask-become-pass
 
 where:
